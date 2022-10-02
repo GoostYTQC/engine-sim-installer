@@ -9,6 +9,7 @@
 #include <assert.h>
 #include <chrono>
 #include <set>
+#include <cassert>
 
 Simulator::Simulator() {
     m_engine = nullptr;

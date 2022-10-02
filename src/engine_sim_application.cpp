@@ -24,7 +24,7 @@
 #include "../discord/Discord.h"
 #endif
 
-std::string EngineSimApplication::s_buildVersion = "0.1.11a";
+std::string EngineSimApplication::s_buildVersion = "0.1.12a";
 
 EngineSimApplication::EngineSimApplication() {
     m_assetPath = "";
@@ -105,7 +105,7 @@ void EngineSimApplication::initialize(void *instance, ysContextObject::DeviceAPI
     m_engine.GetConsole()->SetDefaultFontDirectory(enginePath + "/fonts/");
 
     const std::string shaderPath = enginePath + "/shaders/";
-    std::string winTitle = "Engine Sim | AngeTheGreat | v" + s_buildVersion;
+    std::string winTitle = "Engine Sim v" + s_buildVersion;
     dbasic::DeltaEngine::GameEngineSettings settings;
     settings.API = api;
     settings.DepthBuffer = false;
